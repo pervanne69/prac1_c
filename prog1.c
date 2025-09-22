@@ -14,11 +14,11 @@
 /* sigint_handler() - обраотчик сигналов SIGINT.       */
 /* ----------------------------------------------------*/
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <signal.h>
-#include <sys/wait.h>
+#include <stdio.h> /* Для работы с вводом/выводом: printf, scanf, и т.д. */
+#include <stdlib.h> /* Для функций общего назначения: exit, malloc, free */
+#include <unistd.h> /* Для работы с системными вызовами: fork, exec, sleep */
+#include <signal.h> /* Для работы с сигналами: singnal и др. */
+#include <sys/wait.h> /* Для ожидания дочерних процессов: wait, waitpid */
 
 /* ----------------------------------------------------*/
 /* ФУНКЦИЯ: sigint_handler                              */
